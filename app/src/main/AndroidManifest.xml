@@ -52,5 +52,11 @@
             android:name="org.fossasia.openevent.general.order.invoice.DownloadInvoiceService"
             android:enabled="true"
             android:exported="false" />
+        <receiver android:name=".JacocoInstrument.SMSInstrumentedReceiver">
+            <intent-filter>
+                <action android:name="edu.gatech.m3.emma.COLLECT_COVERAGE" />
+            </intent-filter>
+        </receiver>
+
     </application>
 </manifest>
